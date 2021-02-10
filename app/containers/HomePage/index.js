@@ -60,10 +60,10 @@ export function HomePage({
   return (
     <article>
       <Helmet>
-        <title>Home Page</title>
+        <title>Page d'Accueil</title>
         <meta
           name="description"
-          content="A React.js Boilerplate application homepage"
+          content="Restaurant La Bonne Table, cuisine traditionnelle française sur Nîmes"
         />
       </Helmet>
       <div>
