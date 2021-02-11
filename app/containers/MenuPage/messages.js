@@ -10,6 +10,6 @@ export const scope = 'boilerplate.containers.MenuPage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'Menu',
+    defaultMessage: 'Menu du restaurant, La Bonne Table',
   },
 });

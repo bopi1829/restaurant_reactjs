@@ -21,6 +21,9 @@ const buttonStyles = css`
     background: #41addd;
     color: #fff;
   }
+  &:visited {
+    color: #41addd;
+  }
 `;
 
 export default buttonStyles;

@@ -12,4 +12,8 @@ export default defineMessages({
     id: `${scope}.header`,
     defaultMessage: 'Contact',
   },
+  footer: {
+    id: `${scope}.footer`,
+    defaultMessage: "Retour à l'accueil | ",
+  },
 });
