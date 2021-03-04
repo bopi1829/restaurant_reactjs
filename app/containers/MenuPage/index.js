@@ -12,6 +12,8 @@ import messages from './messages';
 import Img from '../../components/Img';
 import Plat from './plat.jpg';
 
+import MenuTable from './menu.js';
+
 export default function MenuPage() {
   return (
     <div>
@@ -26,6 +28,7 @@ export default function MenuPage() {
       <H1>
         <FormattedMessage {...messages.header} />
       </H1>
+      <MenuTable />
     </div>
   );
 }
