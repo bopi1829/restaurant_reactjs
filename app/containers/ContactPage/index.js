@@ -1,5 +1,5 @@
 /*
- * FeaturePage
+ * ContactPage
  *
  * List all the features
  */
@@ -9,6 +9,10 @@ import { FormattedMessage } from 'react-intl';
 
 import H1 from 'components/H1';
 import messages from './messages';
+import NavBarMenu from '../../components/NavBar';
+import Restaurant from './restaurant.jpg';
+import Img from './Img';
+import Form from './form';
 
 export default function ContactPage() {
   return (
@@ -23,6 +27,9 @@ export default function ContactPage() {
       <H1>
         <FormattedMessage {...messages.header} />
       </H1>
+      <NavBarMenu />
+      <Img src={Restaurant} alt="Restaurant, La Bonne Table, cuisine traditionnelle sur Nîmes"/>
+      <Form />
     </div>
   );
 }

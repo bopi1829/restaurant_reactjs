@@ -8,11 +8,13 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
 import H1 from 'components/H1';
+import Table from 'components/Table';
 import messages from './messages';
-import Img from '../../components/Img';
+import Img from './Img';
 import Plat from './plat.jpg';
 
 import MenuTable from './menu.js';
+import NavBarMenu from '../../components/NavBar';
 
 export default function MenuPage() {
   return (
@@ -24,11 +26,14 @@ export default function MenuPage() {
           content="Page du menu"
         />
       </Helmet>
-      <Img src={Plat} alt="Plat, restaurant La Bonne Table" />
       <H1>
         <FormattedMessage {...messages.header} />
       </H1>
-      <MenuTable />
+      <NavBarMenu />
+      <Img src={Plat} alt="Plat, restaurant La Bonne Table" />
+      <Table>
+        <MenuTable />
+      </Table>
     </div>
   );
 }

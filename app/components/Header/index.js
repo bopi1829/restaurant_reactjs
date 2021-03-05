@@ -11,7 +11,6 @@ import messages from './messages';
 function Header() {
   return (
     <div>
-      <Img src={Restaurant} alt="La Bonne Table - Bannière" />
       <H1>La Bonne Table</H1>
       <NavBar>
         <HeaderLink to="/">
@@ -24,6 +23,7 @@ function Header() {
           <FormattedMessage {...messages.contact} />
         </HeaderLink>
       </NavBar>
+      <Img src={Restaurant} alt="La Bonne Table - Bannière" />
     </div>
   );
 }

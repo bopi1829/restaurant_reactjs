@@ -20,7 +20,8 @@ import {
   makeSelectError,
 } from 'containers/App/selectors';
 
-import LearnMore from './home'
+import LearnMore from './home';
+import Header from 'components/Header';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -60,6 +61,7 @@ export function HomePage({
           content="Restaurant La Bonne Table, cuisine traditionnelle française sur Nîmes"
         />
       </Helmet>
+      <Header />
       <div>
         <LearnMore />
       </div>
